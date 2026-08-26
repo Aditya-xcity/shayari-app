@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shayari</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header>
+            <h1>Shayari</h1>
+            <p>words that feel like music.</p>
+        </header>
+
+
+        <!-- Music / Shayari Player -->
+        <section class="player">
+
+            <!-- Vinyl Disc -->
+            <div class="disc-container">
+                <div class="disc">
+                    <div class="disc-center"></div>
+                </div>
+            </div>
+
+
+            <!-- Shayari -->
+            <div class="shayari-container">
+
+                <span id="mood">💭 Dil</span>
+
+                <p id="shayari">
+                    कुछ बातें कही नहीं जातीं,
+                    बस महसूस की जाती हैं।
+                </p>
+
+                <span id="author">
+                    — Anonymous
+                </span>
+
+            </div>
+
+
+            <!-- Controls -->
+            <div class="controls">
+
+                <button
+                    id="previousBtn"
+                    aria-label="Previous Shayari">
+                    ←
+                </button>
+
+                <button
+                    id="playBtn"
+                    aria-label="Play music">
+                    ▶
+                </button>
+
+                <button
+                    id="nextBtn"
+                    aria-label="Next Shayari">
+                    →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Music Progress -->
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+    </main>
+
+
+    <!--
+        Music source is intentionally empty.
+
+        JavaScript will set the music source
+        based on the Shayari JSON.
+    -->
+    <audio id="music"></audio>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
